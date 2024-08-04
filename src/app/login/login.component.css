@@ -24,7 +24,7 @@
 .login-form button {
   width: 100%;
   padding: 12px; /* Match input padding for consistency */
-  background-color: #007bff; /* Primary button color */
+  background-color: #28a745; /* Primary button color */
   color: #fff;
   border: none;
   border-radius: 8px; /* Match form border radius */
@@ -35,11 +35,15 @@
 
 /* Button hover effect */
 .login-form button:hover {
-  background-color: #0056b3; /* Slightly darker shade for hover effect */
+  background-color: #199133;
+  transform: translateY(-2px);
 }
 
 /* Optional: Focus state for inputs */
 .login-form input:focus {
-  border-color: #007bff; /* Highlight border color when focused */
-  outline: none; /* Remove default outline */
+  border-color: #007bff; 
+  outline: none;
+}
+.register-form button:active {
+  transform: translateY(1px);
 }
