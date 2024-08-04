@@ -1,33 +1,43 @@
-/* navbar.component.css */
+/* Navigation bar container */
 nav {
-  position: fixed;
-  top: 120px; /* Adjust this value based on the height of your Header */
+  position: fixed; /* Fixes the nav to the top */
+  top: 0; 
   left: 0;
   width: 100%;
-  background-color: #333; /* Change to your preferred color */
+  background-color: #333; /* Dark background color */
   color: white;
-  z-index: 1000; /* Ensures it stays on top of other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000; /* Ensures it stays on top of other elements */
 }
 
+/* Navigation list */
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center; /* Center the nav items */
+  align-items: center; /* Align items vertically */
+  height: 60px; /* Set height for the nav bar */
 }
 
+/* Navigation items */
 nav ul li {
   margin: 0;
 }
 
+/* Navigation links */
 nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 15px;
+  padding: 15px 20px; /* More padding for better clickability */
   display: block;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
-nav ul li a:hover {
-  background-color: #555; /* Change to your preferred hover color */
+/* Hover effect */
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #555; /* Slightly lighter background on hover */
+  border-radius: 4px; /* Rounded corners for the hover effect */
 }

@@ -12,8 +12,7 @@ import { FormsModule } from '@angular/forms';
 export class LoginComponent {
   username: string = '';
   password: string = '';
+email: any;
 
-  login() {
-    // Handle login logic
-  }
+  login() {  }
 }

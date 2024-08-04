@@ -1,41 +1,58 @@
+/* Product details container */
 .product-details {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 20px;
+  max-width: 800px; 
+  margin: 0 auto; 
+  background-color: #f9f9f9; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
+/* Main product image */
 .main-image img {
   width: 100%;
   max-width: 600px;
-  border-radius: 8px;
+  border-radius: 8px; 
+  object-fit: cover; 
 }
 
+/* Stars rating */
 .stars {
   font-size: 1.5em;
   color: gold;
+  margin: 10px 0; 
 }
 
 .star {
-  color: #ddd; /* Light color for empty stars */
+  color: #ddd;
 }
 
 .star.filled {
-  color: gold; /* Golden color for filled stars */
+  color: rgb(255, 38, 0); 
 }
 
+/* Button styling */
 button {
   margin: 10px;
-  padding: 10px 20px;
+  padding: 12px 20px; 
   border: none;
-  border-radius: 5px;
-  background-color: #007bff;
+  border-radius: 8px; 
+  background-color: #218838; 
   color: white;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #28a745; 
+  transform: translateY(-2px); 
+}
+
+button:active {
+  transform: translateY(1px); 
 }

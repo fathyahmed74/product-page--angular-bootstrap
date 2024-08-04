@@ -1,30 +1,30 @@
 .product-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
-  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 280px;
   margin: 20px;
   display: flex;
   flex-direction: column;
 }
 
 .product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .product-image {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .product-details {
-  padding: 15px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,41 +32,42 @@
 }
 
 .product-title {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 15px;
 }
 
 .product-price,
 .product-discounted-price {
-  font-size: 16px;
-  color: #666;
-  margin: 0 0 5px;
+  font-size: 18px;
+  color: #666666;
+  margin: 0 0 10px;
 }
 
 .product-discounted-price {
-  font-weight: bold;
+  font-weight: 700;
+  color: #d9534f;
 }
 
 .product-rating {
-  font-size: 14px;
-  margin: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
 }
 
 .rating-stars {
-  color: gold;
+  color: #f39c12;
 }
 
 .rating-value {
-  margin-left: 5px;
-  color: #333;
+  margin-left: 8px;
+  color: #333333;
 }
 
 .product-stock {
-  font-size: 14px;
-  font-weight: bold;
-  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 12px 0;
 }
 
 .product-actions {
@@ -77,17 +78,23 @@
 
 .details-button,
 .cart-button {
-  background-color: #007bff;
+  background-color: #28a745;
   color: white;
   border: none;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 14px;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .details-button:hover,
 .cart-button:hover {
-  background-color: #0056b3;
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.details-button:active,
+.cart-button:active {
+  transform: translateY(1px);
 }
