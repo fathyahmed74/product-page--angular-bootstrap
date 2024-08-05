@@ -1,49 +1,54 @@
-/* Container for the login form */
 .login-form {
-  max-width: 360px; /* Slightly wider form */
+  max-width: 400px;
   margin: auto;
-  padding: 20px;
-  border: 1px solid #ddd; /* Light border color */
-  border-radius: 8px; /* Slightly more rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  background-color: #e1d9d9; /* White background for better contrast */
+  padding: 32px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
 }
 
-/* Input fields styling */
 .login-form input {
   width: 100%;
-  padding: 12px; /* Slightly more padding for comfort */
-  margin-bottom: 15px; /* Increased spacing between inputs */
-  border-radius: 8px; /* Match form border radius */
-  border: 1px solid #ddd; /* Lighter border for a softer look */
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
-  font-size: 16px; /* Larger font size for better readability */
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  font-size: 15px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Button styling */
-.login-form button {
-  width: 100%;
-  padding: 12px; /* Match input padding for consistency */
-  background-color: #28a745; /* Primary button color */
-  color: #fff;
-  border: none;
-  border-radius: 8px; /* Match form border radius */
-  cursor: pointer;
-  font-size: 16px; /* Consistent font size with inputs */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-/* Button hover effect */
-.login-form button:hover {
-  background-color: #199133;
-  transform: translateY(-2px);
-}
-
-/* Optional: Focus state for inputs */
 .login-form input:focus {
-  border-color: #007bff; 
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
   outline: none;
 }
-.register-form button:active {
+
+.login-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+.login-form button:active {
   transform: translateY(1px);
+}
+
+.login-form .error {
+  color: #ff0000;
+  margin-bottom: 20px;
+  font-size: 14px;
 }

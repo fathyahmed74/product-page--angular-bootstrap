@@ -8,13 +8,15 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
-const routes: Routes = [
+let routes: Routes;
+
+routes = [
   { path: '', component: ProductsComponent }, // Default route to products list
-  { path: 'product/:id', component: ProductDetailsComponent }, // Route for product details
-  { path: 'cart', component: CartComponent }, // Route for cart
-  { path: 'login', component: LoginComponent }, // Route for login
-  { path: 'register', component: RegisterComponent }, // Route for registration
-  { path: '**', component: NotFoundComponent } // Wildcard route for 404 page
+  { path: 'product/:id', component: ProductDetailsComponent }, 
+  { path: 'cart', component: CartComponent }, 
+  { path: 'login', component: LoginComponent }, 
+  { path: 'register', component: RegisterComponent }, 
+  { path: '**', component: NotFoundComponent } 
 ];
 
 @NgModule({
